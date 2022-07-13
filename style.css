@@ -163,9 +163,33 @@ section{
   padding: 1rem 0;
 }
 
-
-
-
+.about{
+  background-image: url(img/about-bg.png);
+  background-size: cover;
+  background-repeat: no repeat;
+}
+.about .column{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.about .column img{
+  width: 100%;
+}
+.about .column .content{
+  flex: 1 1 40rem;
+}
+.about .column .content h3{
+  font-size: 3rem;
+  color: #333;
+  padding-top: 1rem;
+}
+.about .column .content p{
+  font-size: 1.5rem;
+  color: #666;
+  padding: 1rem 0;
+}
 
 
 
