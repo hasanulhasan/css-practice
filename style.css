@@ -167,6 +167,7 @@ section{
   background-image: url(img/about-bg.png);
   background-size: cover;
   background-repeat: no repeat;
+  padding-bottom:3rem;  
 }
 .about .column{
   display: flex;
@@ -190,10 +191,58 @@ section{
   color: #666;
   padding: 1rem 0;
 }
-
-
-
-
+.about .column .content .buttons a:last-child{
+margin-left: 2rem;
+}
+.newsletter{
+  text-align: center;
+  padding: 5rem 1rem;
+  background: url(img/subscribe-bg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.newsletter h3{
+  color: #fff;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.newsletter p{
+  color: #fff;
+  font-size: 1.6rem;
+  margin: 2rem auto;
+  width: 70rem;
+}
+.newsletter form{
+  display: flex;
+  max-width: 70rem;
+  border: .2rem solid #fff;
+  padding: .5rem;
+  border-radius: 3rem;
+  margin: 2rem auto;
+  height: 5.5rem;
+}
+.newsletter form input[type="email"]{
+  padding: 0 2rem;
+  font-size: 1.7rem;
+  background: none;
+  color: #fff;
+  width: 100%;
+  text-transform: none;
+}
+.newsletter form input[type="email"]::placeholder{
+  color: #333;
+  text-transform: capitalize;
+}
+.newsletter form input[type="submit"]{
+  background: #fff;
+  width: 20rem;
+  font-size: 1.7rem;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+.newsletter form input[type="submit"]:hover{
+  color: var(--pink);
+}
 
 
 
@@ -260,6 +309,9 @@ section{
   .home .content p{
     font-size: 1.5rem;
   }
+  .about{
+    background-position: right;
+  }
 
 }
 @media(max-width:450px){
@@ -267,6 +319,12 @@ section{
   html{
     font-size: 50%;
   }
-
+  .about .column .content .buttons a{
+    width: 100%;
+    text-align: center;
+  }
+  .about .column .content .buttons a:last-child{
+  margin: 1rem 0;
+  }
 
 }
